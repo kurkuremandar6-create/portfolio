@@ -311,35 +311,35 @@
         <!-- Official Repository Banner -->
         <div class="sai-repo-banner">
           <div class="repo-banner-info">
-            <h3>📦 Course Repository: <code>kurkuremandar6-create / S-AI-Projects</code></h3>
-            <p>Official student repository containing all task implementations, pull requests, and automated test pipelines.</p>
+            <h3>📦 Course Repository: <code>e26b07f0752-Mandar / task1</code></h3>
+            <p>Official student repository forked from <code>S-AI-Projects / learning-area</code> containing all task implementations, Playwright regression suites, and submitted pull requests.</p>
           </div>
           <div class="repo-links-group">
-            <a href="https://github.com/kurkuremandar6-create/S-AI-Projects" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              View Repository on GitHub &rarr;
+            <a href="https://github.com/e26b07f0752-Mandar/task1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              View Student Repo &rarr;
             </a>
-            <a href="https://github.com/kurkuremandar6-create/S-AI-Projects/pulls" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              All Pull Requests &rarr;
+            <a href="https://github.com/S-AI-Projects/learning-area/pulls?q=is%3Apr+author%3Ae26b07f0752-Mandar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              All My PRs on S-AI-Projects &rarr;
             </a>
           </div>
         </div>
 
-        <!-- Pull Requests List -->
+        <!-- Pull Requests List (Verified Official Course Records) -->
         <div class="pr-cards-list">
 
-          <!-- PR 1 -->
+          <!-- PR 1: R18-T030 (PR #82) -->
           <article id="sai-pr1" class="pr-card">
             <div class="pr-header">
               <div class="pr-title-group">
                 <div class="pr-badge-row">
-                  <span class="task-id-badge">Task ID: TASK-SAI-101</span>
-                  <span class="pr-status-badge">✓ Merged to Main</span>
-                  <span class="badge">C++17 • Memory Architecture</span>
+                  <span class="task-id-badge">Task ID: R18-T030</span>
+                  <span class="pr-status-badge">PR #82 • Open / Review</span>
+                  <span class="badge">Playwright • Browser Regression Check</span>
                 </div>
-                <h3 class="pr-title">PR #1: Implement High-Throughput Templated Circular Buffer and Dynamic Vector Container</h3>
+                <h3 class="pr-title">PR #82: Add Audio Transcript UI Regression Check</h3>
               </div>
-              <a href="https://github.com/kurkuremandar6-create/S-AI-Projects/pull/1" target="_blank" rel="noopener noreferrer" class="pr-link-action">
-                View PR #1 on GitHub &rarr;
+              <a href="https://github.com/S-AI-Projects/learning-area/pull/82" target="_blank" rel="noopener noreferrer" class="pr-link-action">
+                View PR #82 on GitHub &rarr;
               </a>
             </div>
 
@@ -349,7 +349,7 @@
                   <span>📝</span> Description of Code Modifications
                 </h4>
                 <p class="pr-block-text">
-                  Authored and integrated a generic templated circular buffer (<code>CircularBuffer&lt;T&gt;</code>) in <code>src/dsa/circular_buffer.hpp</code>. Designed a contiguous fixed-size memory pool supporting wrap-around head/tail pointers, custom forward iterators (<code>begin()</code>, <code>end()</code>), boundary assertions, and amortized $O(1)$ push/pop operations. Integrated an extensive unit test suite in <code>tests/test_circular_buffer.cpp</code> covering edge cases such as buffer overflow overwrites, zero-capacity safety, and move-semantics during object transfer.
+                  Implemented an automated Playwright browser regression check in <code>tests/course/r18-t030.mjs</code> verifying audio sources, fallback links, custom controls, and time display. Added a temporary served mutation fixture verifying that removing transcript click bindings triggers expected assertion failures when controls remain at &ldquo;Show transcript&rdquo; and layout height stays at 0px. Documented run instructions and saved baseline, inputs, and results under <code>work/R18-T030/</code>.
                 </p>
               </div>
 
@@ -358,25 +358,25 @@
                   <span>💡</span> Technical Rationale
                 </h4>
                 <p class="pr-block-text">
-                  In streaming AI/ML data ingestion pipelines, standard dynamic containers such as <code>std::vector</code> suffer from worst-case $O(N)$ reallocation and copy overhead when exceeding current capacity, causing severe latency spikes. The fixed-size circular buffer eliminates heap reallocations entirely by recycling memory in a ring structure, maximizing CPU L1/L2 cache line locality, and guaranteeing predictable deterministic response times under high-frequency data arrival.
+                  Manual audio UI verification is non-deterministic across varying device hardware and audio drivers. By stubbing audio playback state and launching an isolated Python loopback static server with automated browser context teardown, the test suite guarantees deterministic, headless regression coverage across continuous integration pipelines without modifying baseline application source code.
                 </p>
               </div>
             </div>
           </article>
 
-          <!-- PR 2 -->
+          <!-- PR 2: R18-T029 (PR #81) -->
           <article id="sai-pr2" class="pr-card">
             <div class="pr-header">
               <div class="pr-title-group">
                 <div class="pr-badge-row">
-                  <span class="task-id-badge">Task ID: TASK-SAI-102</span>
-                  <span class="pr-status-badge">✓ Merged to Main</span>
-                  <span class="badge">Python 3 • SIMD Vectorization</span>
+                  <span class="task-id-badge">Task ID: R18-T029</span>
+                  <span class="pr-status-badge">PR #81 • Open / Review</span>
+                  <span class="badge">Accessibility &amp; Responsive Layout</span>
                 </div>
-                <h3 class="pr-title">PR #2: Vectorized Dataset Normalization, IQR Outlier Clipping &amp; Preprocessing Module</h3>
+                <h3 class="pr-title">PR #81: Test Heroes Reduced Motion, Keyboard Focus &amp; Responsive Viewports</h3>
               </div>
-              <a href="https://github.com/kurkuremandar6-create/S-AI-Projects/pull/2" target="_blank" rel="noopener noreferrer" class="pr-link-action">
-                View PR #2 on GitHub &rarr;
+              <a href="https://github.com/S-AI-Projects/learning-area/pull/81" target="_blank" rel="noopener noreferrer" class="pr-link-action">
+                View PR #81 on GitHub &rarr;
               </a>
             </div>
 
@@ -386,7 +386,7 @@
                   <span>📝</span> Description of Code Modifications
                 </h4>
                 <p class="pr-block-text">
-                  Developed an end-to-end dataset preprocessing module in <code>src/preprocessing/normalizer.py</code>. Implemented Z-score standardization ($\mu=0, \sigma=1$), Min-Max feature rescaling ($[0, 1]$), and Interquartile Range (IQR) outlier trimming utilizing vectorized NumPy broadcasting. Added automated <code>pytest</code> suites in <code>tests/test_normalizer.py</code> validating edge cases including single-value columns (zero variance), missing/NaN imputation, and large array dimensional consistency.
+                  Enhanced <code>javascript/oojs/json/heroes.html</code> and <code>style.css</code> by implementing an accessible keyboard skip-link navigating directly to the main heroes content region with high-contrast visible focus styling. Refactored the rigid 800px content container to dynamically adapt across narrow viewports (375px mobile through 1280px desktop). Authored automated Playwright regression tests in <code>tests/course/r18-t029.mjs</code> verifying computed focus styles and geometry with reduced motion enabled.
                 </p>
               </div>
 
@@ -395,25 +395,25 @@
                   <span>💡</span> Technical Rationale
                 </h4>
                 <p class="pr-block-text">
-                  Traditional Python iterative loops over high-dimensional datasets generate enormous interpreter overhead and memory fragmentation. By replacing loops with NumPy's underlying C-contiguous SIMD (Single Instruction, Multiple Data) vectorized routines, execution runtime dropped by 84% on $10^6$ sample datasets. This ensures numerical stability, prevents vanishing/exploding gradients, and optimizes data pipelines for subsequent neural network layers.
+                  Fixed-width layouts violate WCAG 2.1 Reflow criteria (Success Criterion 1.4.10) causing horizontal scrolling on mobile viewports. Adding keyboard skip-links and visible focus rings satisfies WCAG 2.4.1 (Bypass Blocks) and 2.4.7 (Focus Visible), enabling motor-impaired and keyboard-only users to navigate directly to the primary data view without repetitive tab traversal.
                 </p>
               </div>
             </div>
           </article>
 
-          <!-- PR 3 -->
+          <!-- PR 3: R18-T028 (PR #80) -->
           <article id="sai-pr3" class="pr-card">
             <div class="pr-header">
               <div class="pr-title-group">
                 <div class="pr-badge-row">
-                  <span class="task-id-badge">Task ID: TASK-SAI-103</span>
-                  <span class="pr-status-badge">✓ Merged to Main</span>
-                  <span class="badge">C++17 • Concurrency &amp; RAII</span>
+                  <span class="task-id-badge">Task ID: R18-T028</span>
+                  <span class="pr-status-badge">PR #80 • Open / Review</span>
+                  <span class="badge">Security &amp; Cross-Browser Testing</span>
                 </div>
-                <h3 class="pr-title">PR #3: Thread-Safe Producer-Consumer Task Dispatcher with RAII Lock Guards</h3>
+                <h3 class="pr-title">PR #80: Add Safe Text-Rendering Regression Companion</h3>
               </div>
-              <a href="https://github.com/kurkuremandar6-create/S-AI-Projects/pull/3" target="_blank" rel="noopener noreferrer" class="pr-link-action">
-                View PR #3 on GitHub &rarr;
+              <a href="https://github.com/S-AI-Projects/learning-area/pull/80" target="_blank" rel="noopener noreferrer" class="pr-link-action">
+                View PR #80 on GitHub &rarr;
               </a>
             </div>
 
@@ -423,7 +423,7 @@
                   <span>📝</span> Description of Code Modifications
                 </h4>
                 <p class="pr-block-text">
-                  Resolved concurrency bottlenecks and race conditions in <code>src/concurrency/task_queue.cpp</code>. Refactored the work-dispatching engine using <code>std::mutex</code>, <code>std::unique_lock</code>, and <code>std::condition_variable</code> with scoped RAII lock guards (<code>std::lock_guard</code>). Added atomic predicate checks to guard against spurious wakeups, implemented safe shutdown signaling across worker threads, and wrote multi-threaded stress tests verifying zero data loss under concurrent enqueue/dequeue operations.
+                  Added an isolated text-rendering companion in <code>tools-testing/cross-browser-testing/automation/</code>. Enforced strict plain-text contracts utilizing <code>textContent</code> for user-submitted form strings while preserving preexisting arrow-function outputs. Authored Playwright regression suite in <code>tests/course/r18-t028.mjs</code> verifying injected-element safety, event delegation handlers, computed layout integrity, and zero page console errors.
                 </p>
               </div>
 
@@ -432,7 +432,7 @@
                   <span>💡</span> Technical Rationale
                 </h4>
                 <p class="pr-block-text">
-                  Naive multi-threaded queues without condition variables either rely on busy-waiting (burning 100% CPU cycles checking queue availability) or suffer from deadlocks and dangling pointers when exceptions occur during task execution. Incorporating condition variable notification allows consumer threads to sleep until new tasks arrive, dropping idle CPU utilization to 0%, while RAII wrappers guarantee locks are released even if unexpected exceptions are thrown.
+                  Direct assignment of dynamic user strings to <code>innerHTML</code> introduces severe Cross-Site Scripting (XSS) vulnerabilities. Enforcing <code>textContent</code> ensures input strings are treated strictly as character data rather than parsed markup, mitigating injection attacks while automated regression testing validates that cross-browser automation pipelines remain completely stable.
                 </p>
               </div>
             </div>
@@ -782,13 +782,23 @@
             </a>
           </div>
 
-          <!-- GitHub Card (Matches Course Submissions) -->
+          <!-- GitHub Card (Course Account) -->
           <div class="contact-card">
             <div class="contact-icon-box">🐙</div>
-            <h3 class="contact-type">GitHub Profile</h3>
-            <p class="contact-handle">@kurkuremandar6-create (Course Verified)</p>
+            <h3 class="contact-type">GitHub (Course Submissions)</h3>
+            <p class="contact-handle">@e26b07f0752-Mandar • Official S&amp;AI Account</p>
+            <a href="https://github.com/e26b07f0752-Mandar" target="_blank" rel="noopener noreferrer" class="contact-action-btn secondary">
+              View Course GitHub &rarr;
+            </a>
+          </div>
+
+          <!-- GitHub Card (Personal / Portfolio) -->
+          <div class="contact-card">
+            <div class="contact-icon-box">💻</div>
+            <h3 class="contact-type">GitHub (Portfolio &amp; Projects)</h3>
+            <p class="contact-handle">@kurkuremandar6-create • Projects</p>
             <a href="https://github.com/kurkuremandar6-create" target="_blank" rel="noopener noreferrer" class="contact-action-btn secondary">
-              View GitHub Profile &rarr;
+              View Personal GitHub &rarr;
             </a>
           </div>
 
