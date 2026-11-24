@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle with Gradient -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Glow Ring -->
+  <circle cx="200" cy="200" r="186" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="4"/>
+
+  <!-- Body / Hoodie / Shoulders -->
+  <path d="M100 370 C100 290 140 270 200 270 C260 270 300 290 300 370 Z" fill="url(#shirtGrad)" filter="url(#shadow)"/>
+  <path d="M165 270 L200 320 L235 270 Z" fill="#1e293b" opacity="0.3"/>
+
+  <!-- Neck -->
+  <rect x="175" y="220" width="50" height="60" rx="10" fill="url(#skinGrad)"/>
+
+  <!-- Head Base -->
+  <ellipse cx="200" cy="180" rx="65" ry="75" fill="url(#skinGrad)" filter="url(#shadow)"/>
+
+  <!-- Modern Hair -->
+  <path d="M130 170 C125 120 150 90 200 90 C250 90 275 120 270 170 C255 140 240 130 200 130 C160 130 145 140 130 170 Z" fill="url(#hairGrad)"/>
+  <path d="M140 135 C170 100 230 100 260 135 C240 120 210 115 190 118 C170 120 150 125 140 135 Z" fill="#312e81"/>
+
+  <!-- Ears -->
+  <circle cx="132" cy="185" r="14" fill="#fb923c"/>
+  <circle cx="268" cy="185" r="14" fill="#fb923c"/>
+
+  <!-- Eyes -->
+  <ellipse cx="175" cy="178" rx="7" ry="9" fill="#0f172a"/>
+  <ellipse cx="225" cy="178" rx="7" ry="9" fill="#0f172a"/>
+  <!-- Eye highlights -->
+  <circle cx="173" cy="175" r="2.5" fill="#ffffff"/>
+  <circle cx="223" cy="175" r="2.5" fill="#ffffff"/>
+
+  <!-- Eyebrows -->
+  <path d="M162 160 Q175 154 188 160" stroke="#0f172a" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M212 160 Q225 154 238 160" stroke="#0f172a" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Modern Glasses -->
+  <rect x="156" y="166" width="36" height="25" rx="6" fill="none" stroke="#0284c7" stroke-width="4"/>
+  <rect x="208" y="166" width="36" height="25" rx="6" fill="none" stroke="#0284c7" stroke-width="4"/>
+  <path d="M192 176 L208 176" stroke="#0284c7" stroke-width="4"/>
+  <path d="M156 174 L138 170" stroke="#0284c7" stroke-width="3"/>
+  <path d="M244 174 L262 170" stroke="#0284c7" stroke-width="3"/>
+
+  <!-- Nose -->
+  <path d="M200 182 L197 196 L204 196" stroke="#ea580c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Warm Smile -->
+  <path d="M182 215 Q200 228 218 215" stroke="#991b1b" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Code/Tech Accent Badge on chest -->
+  <circle cx="200" cy="335" r="20" fill="#1e1b4b"/>
+  <text x="200" y="340" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle">&lt;AI/&gt;</text>
+</svg>
